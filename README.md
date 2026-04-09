@@ -15,6 +15,16 @@ Le site est pensé pour une publication simple, sans build ni back-end. Tous les
 - Site en ligne : `https://adrielzimbril.github.io/oricodes-frontend-ss/`
 - Dépôt GitHub : `https://github.com/adrielzimbril/oricodes-frontend-ss`
 
+## Captures
+
+### Accueil
+
+![Capture de la page d'accueil](./screenshots/home.png)
+
+### Contact
+
+![Capture de la page contact](./screenshots/contact.png)
+
 ## Stack
 
 - HTML5
@@ -33,6 +43,7 @@ Le site est pensé pour une publication simple, sans build ni back-end. Tous les
 - `image/` : images, logos et favicons
 - `plugins/` : dépendances front-end embarquées
 - `scss/` : sources SCSS
+- `screenshots/` : captures utilisées dans la documentation
 
 ## Déploiement
 

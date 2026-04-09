@@ -15,6 +15,16 @@ The site is designed for simple deployment with no build step and no back-end. A
 - Live site: `https://adrielzimbril.github.io/oricodes-frontend-ss/`
 - GitHub repository: `https://github.com/adrielzimbril/oricodes-frontend-ss`
 
+## Screenshots
+
+### Home
+
+![Homepage screenshot](./screenshots/home.png)
+
+### Contact
+
+![Contact page screenshot](./screenshots/contact.png)
+
 ## Stack
 
 - HTML5
@@ -33,6 +43,7 @@ The site is designed for simple deployment with no build step and no back-end. A
 - `image/`: images, logos, and favicons
 - `plugins/`: bundled front-end dependencies
 - `scss/`: SCSS sources
+- `screenshots/`: screenshots used in the documentation
 
 ## Deployment
 
