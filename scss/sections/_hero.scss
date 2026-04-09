@@ -1,0 +1,116 @@
+@use "../abstract" as *;
+/* ========== Home 2 : Hero Section Style ============= */
+.home-2 {
+  &_hero-section {
+    padding: 120px 0 !important;
+    @media (min-width: 992px) {
+      padding: 220px 0 !important;
+    }
+
+    .row--custom {
+      --bs-gutter-x: 24px;
+      --bs-gutter-y: 35px;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 992px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &_hero-image-block {
+    position: relative;
+    margin-left: 27px;
+  }
+
+  &_hero-image {
+    .hero-img {
+      margin: auto;
+      @media (min-width: 992px) {
+        height: 500px;
+        width: inherit;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &-shape {
+      position: absolute;
+      right: -9%;
+      top: -14%;
+      width: 17%;
+    }
+
+    &-man-1 {
+      position: absolute;
+      left: -7%;
+      top: 30%;
+      width: 13.3%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-man-2 {
+      position: absolute;
+      right: -7%;
+      bottom: 8%;
+      width: 15%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_hero-content {
+    max-width: 681px;
+  }
+
+  &_hero-content-text {
+    text-align: center;
+    @media (min-width: 992px) {
+      text-align: initial;
+    }
+
+    p {
+      max-width: 590px;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  &_hero-button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 20px;
+    @media (min-width: 992px) {
+      justify-content: initial;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_hero-content-button {
+    &__bottom-text {
+      span {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+        @media (min-width: 992px) {
+          justify-content: initial;
+        }
+      }
+    }
+  }
+}

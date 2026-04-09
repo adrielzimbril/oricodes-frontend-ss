@@ -1,0 +1,49 @@
+@use '../../abstract' as *;
+
+/* ========== Component : process Card Style ============= */
+.process-card {
+  padding: 30px;
+  display: flex;
+  border-radius: 1.2rem;
+  border: 1px solid $black;
+  transition: 0.3s;
+  flex-direction: column;
+  row-gap: 20px;
+
+
+  @media (max-width: 992px) {
+    height: fit-content !important;
+    margin: 10px 0;
+  }
+
+  @media (min-width: 768px) {
+    row-gap: 40px;
+  }
+
+  @media (min-width: 992px) {
+    row-gap: 30px;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &__icon-block img {
+    max-width: 60px;
+  }
+
+  &:hover &__icon {
+    color: #3147FF;
+  }
+
+  p {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  &__heading {
+    @include heading-30;
+    margin-bottom: 16px;
+  }
+}
+  

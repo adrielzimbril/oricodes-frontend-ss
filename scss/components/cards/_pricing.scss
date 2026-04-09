@@ -1,0 +1,99 @@
+@use '../../abstract' as *;
+
+/* ========== Component : Pricing Card Style 1============= */
+.pricing-card {
+  border-radius: 1.65rem;
+  padding: 60px 25px;
+  transition: all .4s;
+
+  @media (min-width: 1200px) {
+    padding: 40px;
+  }
+
+  &__head {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(#0A102F, 0.15);
+  }
+
+  &__plan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    display: inline-flex;
+    padding: 2px 16px;
+    background: rgba($l2-primary-hex, 0.4);
+    border-radius: 1.5rem;
+  }
+
+  &__price-block {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 2.86;
+
+    span {
+      font-weight: 600;
+      font-size: 58px;
+      line-height: 1.38;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: rgba(#0A102F, 0.7);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @media (min-width: 992px) {
+      row-gap: 35px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+    li {
+      display: flex;
+      column-gap: 12px;
+      padding: 0 10px;
+      font-size: 16px;
+      line-height: 1.5;
+
+      &::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f00c";
+        @include square(20px, 500px);
+        @include flex;
+        border: 1px solid $black-3;
+        background-color: $black-3;
+        margin-top: 5px;
+        color: #fff;
+        font-size: 11px;
+      }
+
+      &.disabled {
+        &::before {
+          background-color: transparent;
+          color: $black-3;
+        }
+      }
+    }
+  }
+
+  &.active {
+    border: 5px solid $l2-primary-hex;
+    border-radius: 1.65rem;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../abstract" as *;
+/* Common: Section Heading */
+.section-heading {
+  margin-bottom: 40px;
+
+  @media (min-width: 575px) {
+    margin-bottom: 60px;
+  }
+
+  &--white {
+    .section-heading__title {
+      color: $white;
+    }
+  }
+
+  &--row {
+    row-gap: 30px;
+
+    & > .row {
+      justify-content: space-between;
+      align-items: flex-end;
+      --bs-gutter-y: 30px;
+    }
+
+    .section-heading__title {
+      margin-bottom: 0;
+    }
+
+    .section-heading__button {
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.heading-xxl {
+  @include heading-100;
+  margin-bottom: 24px;
+}
+
+.heading-xl {
+  @include heading-90(500);
+
+  &--v2 {
+    @include heading-90(500);
+    letter-spacing: initial;
+    line-height: 1.07;
+  }
+}
+
+.heading-md {
+  @include heading-46;
+  margin-bottom: 20px;
+  // color: #0A102F;
+
+  &--v3 {
+    @include heading-50;
+  }
+}
+
+.heading-lg {
+  @include heading-56;
+  margin-bottom: 20px;
+}
+
+.heading-sm {
+  @include heading-40;
+}
+
+.heading-xs {
+  @include heading-30(600, -0.033333em);
+  font-family: var(--font-family-base);
+}
+
+.heading-xs-2 {
+  @include heading-20;
+  font-family: var(--font-family-base);
+}
+
+
+
+

@@ -1,0 +1,39 @@
+/* ========== Component  : Tastimonial widget Large Style ============= */
+@use"../../abstract" as *;
+
+.testimonial-widget{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    row-gap: 30px;
+    @media (min-width:1200px){  
+        @include px(30px);
+    }
+    &__stars{
+        padding-bottom: 28px;
+        display: inline-block;
+    }
+    p{
+        margin-bottom: 0;
+        color: $black;
+    }
+    &__rating{
+        strong{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: var(--body-color);
+        }
+        span{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6B6F7B;
+        }
+    }
+}

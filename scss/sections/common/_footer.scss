@@ -1,0 +1,28 @@
+@use '../../abstract/index' as *;
+
+/* Footer Title Common */
+.copyright-inner {
+  @include py(18px);
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* Footer Variations By Color */
+.footer-l02 {
+  background-color: $white-cream;
+
+  .list-social li a {
+    &:hover {
+      background-color: $black-2;
+      color: $white;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $l2-primary;
+    }
+  }
+}
